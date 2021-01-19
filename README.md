@@ -27,3 +27,6 @@
 => sudo apt install mysql-server
 => sudo service mysql status
 
+## move project folder to root directory
+
+=> sudo mv /var/www/html/onlineexam/* /var/www/html/
