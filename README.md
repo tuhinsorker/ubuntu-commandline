@@ -49,19 +49,20 @@
 ### Install PHP
 
 => sudo apt update
+
 => sudo apt-get install -y php8.1-cli php8.1-common php8.1-mysql php8.1-zip php8.1-gd php8.1-mbstring php8.1-curl php8.1-xml php8.1-bcmath
 
-=> This command will install the following modules:
+- [This command will install the following modules]:
 
 php8.1-cli - command interpreter, useful for testing PHP scripts from a shell or performing general shell scripting tasks
-    -> php8.1-common - documentation, examples, and common modules for PHP
-    -> php8.1-mysql - for working with MySQL databases
-    -> php8.1-zip - for working with compressed files
-    -> php8.1-gd - for working with images
-    -> php8.1-mbstring - used to manage non-ASCII strings
-    -> php8.1-curl - lets you make HTTP requests in PHP
-    -> php8.1-xml - for working with XML data
-    -> php8.1-bcmath - used when working with precision floats
+    - [php8.1-common - documentation, examples, and common modules for PHP]
+    - [php8.1-mysql - for working with MySQL databases]
+    - [php8.1-zip - for working with compressed files]
+    - [php8.1-gd - for working with images]
+    - [php8.1-mbstring - used to manage non-ASCII strings]
+    - [php8.1-curl - lets you make HTTP requests in PHP]
+    - [php8.1-xml - for working with XML data]
+    - [php8.1-bcmath - used when working with precision floats]
 
 
 ## Installing phpMyAdmin
