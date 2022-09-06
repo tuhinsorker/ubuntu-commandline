@@ -69,11 +69,17 @@ php8.1-cli - command interpreter, useful for testing PHP scripts from a shell or
 ## Installing phpMyAdmin
 
 => sudo apt update 
+
 => sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
+
 => sudo phpenmod mbstring
+
 => sudo a2enconf phpmyadmin.conf
+
 => sudo service apache2 reload
+
 => sudo systemctl restart apache2
+
 
 ### Enable .htaacess
 
