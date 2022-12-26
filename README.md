@@ -83,7 +83,7 @@ php8.1-cli - command interpreter, useful for testing PHP scripts from a shell or
 
 ### Enable .htaacess
 
-=> sudo a2enmod rewite
+=> sudo a2enmod rewrite
 
 => sudo systemctl restart apache2
 
@@ -99,4 +99,4 @@ php8.1-cli - command interpreter, useful for testing PHP scripts from a shell or
 
 ## move project folder to root directory
 
-=> sudo mv /var/www/html/onlineexam/* /var/www/html/
+=> sudo mv /var/www/html/projectfolder/* /var/www/html/
