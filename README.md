@@ -1,6 +1,4 @@
-
 <p align="center"><a href="" target="_blank"><img src="lamp.png" width="400"></a></p>
-
 
 ### Install Apache, MySQL, PHP (LAMP) Stack on Ubuntu 20.04
 
