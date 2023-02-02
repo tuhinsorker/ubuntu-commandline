@@ -31,9 +31,9 @@
 
 => Sudo mysql
 
-=> CREATEUSER'newuser'@'localhost'IDENTIFIEDBY'password';
+=> CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
 
-=> GRANT ALL PRIVILEGESON* . * TO'newuser'@'localhost';
+=> GRANT ALL PRIVILEGES ON* . * TO'newuser'@'localhost';
 
 => FLUSHPRIVILEGES;
 
@@ -89,11 +89,13 @@ php8.1-cli - command interpreter, useful for testing PHP scripts from a shell or
 
 => sudo nano /etc/apache2/sites-available/000-default.conf
 
+```bash
 <Directory /var/www/html>
     Options Indexes FollowSymLinks MultiViews
     AllowOverride All
     Require all granted
 </Directory>
+```
 
 => sudo systemctl restart apache2
 
