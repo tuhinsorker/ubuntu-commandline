@@ -69,6 +69,8 @@ mysql>SELECT user,authentication_string,plugin,host FROM mysql.user;
 ## Install PHP
 
 ```bash 
+sudo apt update && sudo apt install -y software-properties-common 
+sudo add-apt-repository ppa:ondrej/php 
 sudo apt update
 ```
 ```bash
