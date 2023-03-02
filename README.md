@@ -122,6 +122,12 @@ sudo systemctl restart apache2
 sudo nano /etc/apache2/sites-available/000-default.conf
 ```
 ```bash
+Alias /phpmyadmin /var/www/html/phpmyadmin
+<Directory "/var/www/html/phpmyadmin">
+    Order Allow,Deny
+    Allow from all
+</Directory>
+
 <Directory /var/www/html>
     Options Indexes FollowSymLinks MultiViews
     AllowOverride All
