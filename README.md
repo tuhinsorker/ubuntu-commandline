@@ -254,7 +254,7 @@ sudo service apache2 reload
 sudo systemctl restart apache2
 ```
 
-## Enable .htaccess (Optional)
+## Enable .htaccess
 
 1. Enable the rewrite module:
 
