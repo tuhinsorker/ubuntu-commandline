@@ -142,6 +142,8 @@ php8.0-cli        php8.0-fpm        php8.0-intl       php8.0-oauth      php8.0-r
 Example:
 ```bash
 sudo apt-get install php8.0-cli php8.0-common php8.0-imap php8.0-mysql php8.0-redis php8.0-snmp php8.0-xml php8.0-imagick php8.0-intl php8.0-fpm php8.0-imap
+
+ sudo apt install libapache2-mod-php8.0
 ```
 
 
