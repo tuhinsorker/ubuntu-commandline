@@ -164,7 +164,9 @@ tar xvf phpMyAdmin-latest-all-languages.tar.gz
 3. Move the resulting folder to `/usr/share/phpmyadmin`:
 
 ```bash
-sudo mv phpMyAdmin-* /usr/share/phpmyadmin
+sudo mkdir /usr/share/phpmyadmin/
+sudo mv phpMyAdmin-*/* /usr/share/phpmyadmin
+
 ```
 
 4. Create a directory for phpMyAdmin temp files:
