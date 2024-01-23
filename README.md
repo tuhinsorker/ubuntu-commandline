@@ -142,7 +142,6 @@ php8.0-cli        php8.0-fpm        php8.0-intl       php8.0-oauth      php8.0-r
 Example:
 ```bash
 sudo apt-get install php8.0-cli php8.0-common php8.0-imap php8.0-mysql php8.0-redis php8.0-snmp php8.0-xml php8.0-imagick php8.0-intl php8.0-fpm php8.0-imap
-
  sudo apt install libapache2-mod-php8.0
 ```
 
@@ -177,11 +176,11 @@ sudo apt install php7.4
 ```bash
 sudo apt install phpX.Y-[extension name]
 ```
-3. Commonly, the most useful extensions you need include common, curl, mbstring, opcache, readline, xml, zip, mysql, gd,<code class="language-bash">libapache2 . You can install all these extensions using the following command:
+3. Commonly, the most useful extensions you need include common, curl, mbstring, opcache, readline, xml, zip, mysql, gd,<code class="language-bash">libapache2 .
+   You can install all these extensions using the following command:
 ```bash
 sudo apt install php7.4-cli libapache2-mod-php7.4 php7.4-common php7.4-curl php7.4-mbstring php7.4-opcache php7.4-readline php7.4-xml php7.4-zip php7.4-mysql php7.4-gd
 ```
-
 ## Switching Between PHP Versions
 1. To switch between PHP versions, you can use the update-alternatives command. For instance, to switch to PHP 7.4, run:
 
