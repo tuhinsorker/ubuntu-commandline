@@ -147,6 +147,66 @@ sudo apt-get install php8.0-cli php8.0-common php8.0-imap php8.0-mysql php8.0-re
 ```
 
 
+## Add a PPA Repository
+
+1. Run the following command:
+```bash
+sudo apt install software-properties-common
+```
+2. Run the following command:
+```bash
+sudo add-apt-repository ppa:ondrej/php
+```
+3. After adding the repository, update your package list:
+```bash
+sudo apt update
+```
+
+## Install PHP Version 7.4
+
+1. To install PHP 7.4 FPM, you’d run:
+```bash
+sudo apt install php7.4-fpm
+```
+OR if you don’t want to install PHP-FMP version then follow this command:
+```bash
+sudo apt install php7.4
+```
+## Install PHP 7.4 Extensions
+1. Run the following command:
+```bash
+sudo apt install phpX.Y-[extension name]
+```
+3. Commonly, the most useful extensions you need include common, curl, mbstring, opcache, readline, xml, zip, mysql, gd,<code class="language-bash">libapache2 . You can install all these extensions using the following command:
+```bash
+sudo apt install php7.4-cli libapache2-mod-php7.4 php7.4-common php7.4-curl php7.4-mbstring php7.4-opcache php7.4-readline php7.4-xml php7.4-zip php7.4-mysql php7.4-gd
+```
+
+## Switching Between PHP Versions
+1. To switch between PHP versions, you can use the update-alternatives command. For instance, to switch to PHP 7.4, run:
+
+```bash
+sudo update-alternatives --set php /usr/bin/php7.4
+```
+To confirm the active PHP version, you can use the php -v command:
+```bash
+php -v
+```
+
+2. Configuring Web Servers
+If you’re running web applications, you’ll also need to configure your web server to use the desired PHP version. For Apache, you can enable PHP for a specific version with:
+Disable your current PHP version and then enable PHP 7.4 for the Apache server.
+Here are the corrected commands:
+
+For example, if your current PHP version is PHP 7.4:
+```bash
+sudo a2dismod php8.1
+```
+And then enable PHP 7.4 for the Apache server:
+```bash
+sudo a2enmod php7.4
+```
+
 ## Installing Latest phpMyAdmin
 
 1. Download the latest version of phpMyAdmin:
