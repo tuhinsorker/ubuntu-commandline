@@ -94,6 +94,60 @@ If you want to change the root password for MySQL:
 ALTER USER 'root'@'localhost' IDENTIFIED WITH 'mysql_native_password' BY 'newpassword';
 ```
 
+## Add a PPA Repository
+
+1. Run the following command:
+```bash
+sudo apt install software-properties-common
+```
+2. Run the following command:
+```bash
+sudo add-apt-repository ppa:ondrej/php
+```
+3. After adding the repository, update your package list:
+```bash
+sudo apt update
+```
+
+
+## Install PHP Version 7.4
+
+1. To install PHP 7.4 FPM, you’d run:
+```bash
+sudo apt install php7.4-fpm
+```
+OR if you don’t want to install PHP-FMP version then follow this command:
+```bash
+sudo apt install php7.4
+```
+## Install PHP 7.4 Extensions
+1. Run the following command:
+```bash
+sudo apt install phpX.Y-[extension name]
+```
+3. Commonly, the most useful extensions you need include common, curl, mbstring, opcache, readline, xml, zip, mysql, gd,libapache2 . You can install all these extensions using the following command:
+```bash
+sudo apt install php7.4-cli libapache2-mod-php7.4 php7.4-common php7.4-curl php7.4-mbstring php7.4-opcache php7.4-readline php7.4-xml php7.4-zip php7.4-mysql php7.4-gd
+```
+
+## Install PHP 8.0
+
+1. Update all system packages to the latest, Run the following command:
+```bash
+sudo apt-get update
+sudo apt-get install php8.0
+```
+2. To install PHP 8 extensions on Ubuntu 20.04, Run the following command:
+```bash
+sudo apt-get install php8.0-<extension>
+```
+
+Example:
+```bash
+sudo apt-get install php8.0-cli php8.0-common php8.0-imap php8.0-mysql php8.0-redis php8.0-snmp php8.0-xml php8.0-imagick php8.0-intl php8.0-fpm php8.0-imap
+ sudo apt install libapache2-mod-php8.0
+```
+
 ## Install PHP
 
 1. Update the package list and install necessary software properties:
@@ -116,59 +170,10 @@ sudo apt update
 sudo apt-get install -y php8.1 php8.1-cli php8.1-common php8.1-mysql php8.1-zip php8.1-gd php8.1-mbstring php8.1-curl php8.1-xml php8.1-bcmath libapache2-mod-php8.1 php8.1-json
 ```
 
-## Install PHP 8.0
-
-1. Update all system packages to the latest, Run the following command:
-```bash
-sudo apt-get update
-sudo apt-get install php8.0
-```
-2. To install PHP 8 extensions on Ubuntu 20.04, Run the following command:
-```bash
-sudo apt-get install php8.0-<extension>
-```
-
-Example:
-```bash
-sudo apt-get install php8.0-cli php8.0-common php8.0-imap php8.0-mysql php8.0-redis php8.0-snmp php8.0-xml php8.0-imagick php8.0-intl php8.0-fpm php8.0-imap
- sudo apt install libapache2-mod-php8.0
-```
 
 
-## Add a PPA Repository
 
-1. Run the following command:
-```bash
-sudo apt install software-properties-common
-```
-2. Run the following command:
-```bash
-sudo add-apt-repository ppa:ondrej/php
-```
-3. After adding the repository, update your package list:
-```bash
-sudo apt update
-```
 
-## Install PHP Version 7.4
-
-1. To install PHP 7.4 FPM, you’d run:
-```bash
-sudo apt install php7.4-fpm
-```
-OR if you don’t want to install PHP-FMP version then follow this command:
-```bash
-sudo apt install php7.4
-```
-## Install PHP 7.4 Extensions
-1. Run the following command:
-```bash
-sudo apt install phpX.Y-[extension name]
-```
-3. Commonly, the most useful extensions you need include common, curl, mbstring, opcache, readline, xml, zip, mysql, gd,libapache2 . You can install all these extensions using the following command:
-```bash
-sudo apt install php7.4-cli libapache2-mod-php7.4 php7.4-common php7.4-curl php7.4-mbstring php7.4-opcache php7.4-readline php7.4-xml php7.4-zip php7.4-mysql php7.4-gd
-```
 ## Switching Between PHP Versions
 1. To switch between PHP versions, you can use the update-alternatives command. For instance, to switch to PHP 7.4, run:
 ```bash
