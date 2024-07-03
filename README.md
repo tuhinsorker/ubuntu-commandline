@@ -164,14 +164,14 @@ sudo add-apt-repository ppa:ondrej/php
 sudo apt update
 ```
 
-3. Install PHP 8.1 and required modules:
+## Install PHP 8.1 and required modules:
 
 ```bash
 sudo apt-get install -y php8.1 php8.1-cli php8.1-common php8.1-mysql php8.1-zip php8.1-gd php8.1-mbstring php8.1-curl php8.1-xml php8.1-bcmath libapache2-mod-php8.1 php8.1-json
 ```
 
 
-3. How to install PHP 8.2 on Ubuntu 22.04
+## How to install PHP 8.2 on Ubuntu 22.04
 ```bash
 apt-get update
 sudo apt-get install php8.2
